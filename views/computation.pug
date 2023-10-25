@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Math function results.
+
+    - var x = Math.floor(Math.random() * 10);
+    - var y = Math.floor(Math.random() * 10);
+    - var result1 = Math.log(x);
+    - var result2 = Math.log10(y);
+    - var result3 = Math.imul(x,y)
+
+  p Result of Math.log(#{x}) is #{result1}
+  p Result of Math.log10(#{y}) is #{result2}
+  p Result of Math.log10(#{x},#{y}) is #{result3}
+  
+
